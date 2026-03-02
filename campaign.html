@@ -1,61 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Laptops for Students Campaign</title>
+    <title>Emma-TechRelief Campaigns</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Laptops for Students</h1>
+    <h1>Emma-TechRelief Campaigns</h1>
+    <p>Transforming Lives Through Technology</p>
 </header>
 
 <nav>
     <a href="index.html">Home</a>
-    <a href="campaign.html">Campaign</a>
+    <a href="campaign.html">Campaigns</a>
     <a href="start.html">Start Campaign</a>
     <a href="about.html">About</a>
 </nav>
 
 <div class="container">
 
+    <!-- Campaign Card 1 -->
     <div class="card">
-
         <img src="images/student1.jpg" alt="Student with laptop">
 
-        <h2>Goal: $5,000</h2>
-        <p><strong>Raised:</strong> $3,750</p>
+        <h2>Laptops for Students</h2>
+        <p>Goal: $5,000</p>
+        <p>Raised: <span class="counter" data-target="3750">0</span></p>
 
         <div class="progress-bar">
-            <div class="progress"></div>
+            <div class="progress" data-progress="75"></div>
         </div>
 
         <p class="story">
-            Meet Amin, a high school junior who dreams of becoming a software engineer. 
-            Before receiving a refurbished laptop, she completed assignments using her 
-            phone and borrowed devices from classmates. With reliable access to her own 
-            computer, Amina can now attend virtual tutoring sessions, complete coding 
-            projects, and apply for college scholarships confidently.
+            Meet Amin. She once completed assignments on her phone.
+            With a donated laptop, she now attends coding classes and
+            prepares for college.
         </p>
 
-        <p>
-            This campaign collects donated laptops, professionally refurbishes them, 
-            installs updated software, and distributes them to underserved students 
-            who lack access to personal technology.
+        <button class="button">Donate Now</button>
+    </div>
+
+
+    <!-- Campaign Card 2 -->
+    <div class="card">
+        <img src="images/student2.jpg" alt="Small business owner">
+
+        <h2>Cybersecurity for Small Businesses</h2>
+        <p>Goal: $10,000</p>
+        <p>Raised: <span class="counter" data-target="5200">0</span></p>
+
+        <div class="progress-bar">
+            <div class="progress" data-progress="52"></div>
+        </div>
+
+        <p class="story">
+            Local businesses face growing cyber threats.
+            This campaign provides firewall setup, antivirus protection,
+            and network security training.
         </p>
 
-        <h3>How You Can Help</h3>
-        <button class="button">$25</button>
-        <button class="button">$50</button>
-        <button class="button">$100</button>
-
+        <button class="button">Support This Cause</button>
     </div>
 
 </div>
 
+<!-- Testimonials Section -->
+<section class="testimonials">
+    <h2>What Our Community Says</h2>
+
+    <div class="testimonial-card">
+        <p>"Thanks to Emma-TechRelief, my daughter can now complete her schoolwork at home."</p>
+        <h4>- Parent Beneficiary</h4>
+    </div>
+
+    <div class="testimonial-card">
+        <p>"Their cybersecurity support saved my small business from a ransomware attack."</p>
+        <h4>- Local Business Owner</h4>
+    </div>
+</section>
+
 <footer>
     © 2026 Emma-TechRelief | Bridging the Digital Divide
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
