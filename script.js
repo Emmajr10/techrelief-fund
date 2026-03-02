@@ -1,4 +1,4 @@
-// Animated Progress Bars
+// Animate Progress Bars
 document.querySelectorAll(".progress").forEach(bar => {
     let value = bar.getAttribute("data-progress");
     setTimeout(() => {
@@ -6,12 +6,11 @@ document.querySelectorAll(".progress").forEach(bar => {
     }, 500);
 });
 
-// Donation Counter Animation
+// Animate Donation Counters
 const counters = document.querySelectorAll(".counter");
 
 counters.forEach(counter => {
     counter.innerText = "0";
-
     const updateCounter = () => {
         const target = +counter.getAttribute("data-target");
         const current = +counter.innerText;
@@ -24,6 +23,5 @@ counters.forEach(counter => {
             counter.innerText = target;
         }
     };
-
     updateCounter();
 });
