@@ -136,3 +136,48 @@
         width: 90%;
     }
 }
+/* Two images side-by-side */
+.image-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.image-row img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+/* Mobile responsive images */
+@media (max-width: 768px) {
+    .image-row {
+        flex-direction: column;
+    }
+
+    .image-row img {
+        width: 100%;
+    }
+}
+/* Two images side by side */
+.image-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.image-row img {
+    width: 50%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .image-row {
+        flex-direction: column;
+    }
+
+    .image-row img {
+        width: 100%;
+    }
+}
